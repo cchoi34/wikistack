@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 app.use("/wiki", require("./routes/wiki"));
-app.use("/user", require("./routes/user"));
+app.use("/users", require("./routes/user"));
 
 app.get("/", (req, res, next) => {
     res.redirect('/wiki');
